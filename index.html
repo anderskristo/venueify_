@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Venueify</title>
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/app.css">
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>	
+</head>
+<body>
+
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Venueify</a>
+			<form id="search">
+				<input id="search-city" type="text" tabindex="1" placeholder="Search for a city to view upcoming events">
+				<button id="search-button" type="submit" tabindex="2" class="button btn"><span class="button-content">GO!</span></button>
+			</form>
+        </div>
+      </div>
+    </div>
+
+    <div id="map-canvas"></div>
+
+	<!-- LÉ SCRIPTS -->
+	<script src="assets/js/jquery.2.1.0.min.js"></script>
+	<script src="assets/js/infobubble.js"></script>	
+	<script src="assets/js/app.js"></script>
+</body>
+</html>

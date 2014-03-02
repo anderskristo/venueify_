@@ -1,0 +1,162 @@
+$primary-color: #2C3E50;
+$darker-primary-color: #15253C;
+$text-color: #fff;
+$border-radius: 3px;
+
+body, html{
+    height: 100%;
+    width: 100%;
+    color: #E4E1E1;
+}
+
+.navbar-default {
+    background-color: $primary-color;
+}
+
+.top{padding-top: 60px;}
+
+.menu {
+    list-style: none;
+    border-bottom: 0.1em solid black;
+    margin-bottom: 2em;
+    padding: 0 0 0.5em;
+}
+
+.menu:before {
+    content: "[";
+}
+
+.menu:after {
+    content: "]";
+}
+
+.menu > li {
+    display: inline;
+}
+
+.menu > li:before {
+    content: "|";
+    padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+    content: "";
+    padding: 0;
+}
+
+.logo {
+    width: 100px;
+    height: 60px;
+    float: left;
+}
+
+button, label{
+    color: #fff;
+}
+
+.button:hover,
+.button:active {
+    background: #c0392b;
+    -webkit-transition: all .25s ease-in-out;
+     -moz-transition: all .25s ease-in-out;
+      -ms-transition: all .25s ease-in-out;
+       -o-transition: all .25s ease-in-out;
+          transition: all .25s ease-in-out;
+}
+
+#search {
+    float: left;
+}
+
+#search-city {
+    display: block;
+    float: left;
+    background: $darker-primary-color;
+    width: 310px;
+    padding: 10px;
+    margin: 9px 0;
+    border: 0;
+    color: $text-color;
+    -moz-border-radius: $border-radius;
+    -webkit-border-radius: $border-radius;
+    border-radius: $border-radius;
+}
+
+.button {
+    display: block;
+    float: left;
+    background: $darker-primary-color;
+    width: 70px;
+    padding: 10px;
+    margin: 9px 20px;
+    border: 0;
+    color: $text-color;
+    -moz-border-radius: $border-radius;
+    -webkit-border-radius: $border-radius;
+    border-radius: $border-radius;
+}
+
+.bubble h4 {
+    text-align: center;
+    font-weight: bold;
+    color: #c0392b;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #09163B;
+}
+
+.artists {
+    max-height: 200px;
+    overflow: scroll;
+    background: #203244;
+    padding: 5px;
+    border-radius: 5px;
+    color: #ccc;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.info {
+    padding: 15px 0;
+}
+
+.loc, .date p {
+    font-size: 12px;
+    padding: 0 30px;
+}
+
+.lfm a {
+    font-size: 12px;
+    padding: 0 30px;
+    color: #E4E1E1;
+}
+
+.loc {
+    background-image: url('../images/location.png');
+    background-repeat: no-repeat;
+}
+.date {
+    background-image: url('../images/alarm.png');
+    background-repeat: no-repeat;
+}
+.lfm {
+    background-image: url('../images/lastfm.png');
+    background-repeat: no-repeat;
+}
+
+#map-canvas {
+    height: 100%;
+    width: 100%;
+}
+
+#map-canvas img {max-width: inherit;}
+
+.navbar-default .navbar-brand {
+    font-family: 'Lobster', cursive;
+    color: $text-color;
+    font-size: 34px;
+    margin-right: 20px;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #d8d8d8;
+}
