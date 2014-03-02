@@ -1,4 +1,4 @@
 venueify
 ========
 
-Simple app 
+Simple LastFM app to get events based on location.
