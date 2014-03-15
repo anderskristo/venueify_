@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?u16g9n");
+  src: url("../fonts/icomoon.eot?#iefixu16g9n") format("embedded-opentype"), url("../fonts/icomoon.woff?u16g9n") format("woff"), url("../fonts/icomoon.ttf?u16g9n") format("truetype"), url("../fonts/icomoon.svg?u16g9n#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
 body, html {
   height: 100%;
   width: 100%;
@@ -79,25 +97,25 @@ body, html {
   text-shadow: 1px 1px 1px #09163B; }
 .bubble .info {
   padding: 15px 0; }
-  .bubble .info .loc {
-    background-image: url("../images/location.png");
-    background-repeat: no-repeat; }
-    .bubble .info .loc p {
-      font-size: 12px;
-      padding: 0 30px; }
-  .bubble .info .date {
-    background-image: url("../images/alarm.png");
-    background-repeat: no-repeat; }
-    .bubble .info .date p {
-      font-size: 12px;
-      padding: 0 30px; }
-  .bubble .info .lfm {
-    background-image: url("../images/lastfm.png");
-    background-repeat: no-repeat; }
-    .bubble .info .lfm a {
-      font-size: 12px;
-      padding: 0 30px;
-      color: #E4E1E1; }
+  .bubble .info span {
+    float: left;
+    margin-right: 8px;
+    font-size: 20px; }
+  .bubble .info .loc .icon-location:before {
+    content: "\e618"; }
+  .bubble .info .loc p {
+    font-size: 12px;
+    padding: 0 15px; }
+  .bubble .info .date .icon-calendar:before {
+    content: "\e645"; }
+  .bubble .info .date p {
+    font-size: 12px;
+    padding: 0 15px; }
+  .bubble .info .lfm .icon-lastfm:before {
+    content: "\e705"; }
+  .bubble .info .lfm a {
+    font-size: 12px;
+    color: #E4E1E1; }
 .bubble .artists {
   max-height: 200px;
   overflow: scroll;

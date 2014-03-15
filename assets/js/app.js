@@ -48,6 +48,7 @@ Venue.map = function (data) {
   var infoBubble
 
   $.each(lfmData, function (index, item) {
+    console.log(item)
     marker = new google.maps.Marker({
       position: new google.maps.LatLng(item.lat, item.long),
       map: map,
@@ -61,8 +62,8 @@ Venue.map = function (data) {
       }
       if(item.artist instanceof Array) {
         var contentArtists = '<div class="bubble"><h4>' + item.title +
-        '</h4><div class="info"><div class="loc"><p>' + item.venue + ', ' + item.city +
-        '</p></div><div class="date"><p>' + item.date + '</p></div><div class="lfm"><a href="'+ item.lastfm +'" target="_BLANK">Event on LastFM</a></div></div>Attending artists:</br><div class="artists">' +
+        '</h4><div class="info"><div class="loc"><span class="icon-location"></span><p>' + item.venue + ', ' + item.city +
+        '</p></div><div class="date"><span class="icon-calendar"></span><p>' + item.date + '</p></div><div class="lfm"><span class="icon-lastfm"></span><a href="'+ item.lastfm +'" target="_BLANK">Event on LastFM</a></div></div>Attending artists:</br><div class="artists">' +
         item.artist.join('</br>') + '</div></br><div class="more"></div></br>'
 
         infoBubble = new InfoBubble ({
@@ -79,8 +80,8 @@ Venue.map = function (data) {
         infoBubble.open(map, this)
       } else {
         var contentArtist = '<div class="bubble"><h4>' + item.title +
-        '</h4><div class="info"><div class="loc"><p>' + item.venue + ', ' + item.city +
-        '</p></div><div class="date"><p>' + item.date + '</p></div><div class="lfm"><a href="'+ item.lastfm +'" target="_BLANK">Event on LastFM</a></div></div>Attending artists:</br><div class="artists">' + item.artist + '</div></br><div class="more"></div></br>'
+        '</h4><div class="info"><div class="loc"><span class="icon-location"></span><p>' + item.venue + ', ' + item.city +
+        '</p></div><div class="date"><span class="icon-calendar"></span><p>' + item.date + '</p></div><div class="lfm"><span class="icon-lastfm"></span><a href="'+ item.lastfm +'" target="_BLANK">Event on LastFM</a></div></div>Attending artists:</br><div class="artists">' + item.artist + '</div></br><div class="more"></div></br>'
 
         infoBubble = new InfoBubble ({
           map: map,
