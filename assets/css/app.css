@@ -14,6 +14,14 @@ body, html {
   border-bottom: 0.1em solid black;
   margin-bottom: 2em;
   padding: 0 0 0.5em; }
+  .menu li {
+    display: inline; }
+  .menu li:before {
+    content: "|";
+    padding-right: 0.3em; }
+  .menu li:nth-child(1):before {
+    content: "";
+    padding: 0; }
 
 .menu:before {
   content: "["; }
@@ -21,62 +29,47 @@ body, html {
 .menu:after {
   content: "]"; }
 
-.menu > li {
-  display: inline; }
-
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em; }
-
-.menu > li:nth-child(1):before {
-  content: "";
-  padding: 0; }
-
 .logo {
   width: 100px;
   height: 60px;
   float: left; }
 
-button, label {
-  color: #fff; }
-
-.button:hover,
-.button:active {
-  background: #c0392b;
-  -webkit-transition: all .25s ease-in-out;
-  -moz-transition: all .25s ease-in-out;
-  -ms-transition: all .25s ease-in-out;
-  -o-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out; }
-
 #search {
   float: left; }
-
-#search-city {
-  display: block;
-  float: left;
-  background: #15253c;
-  width: 310px;
-  padding: 10px;
-  margin: 9px 0;
-  border: 0;
-  color: white;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px; }
-
-.button {
-  display: block;
-  float: left;
-  background: #15253c;
-  width: 70px;
-  padding: 10px;
-  margin: 9px 20px;
-  border: 0;
-  color: white;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px; }
+  #search #search-city {
+    display: block;
+    float: left;
+    background: #15253c;
+    width: 310px;
+    padding: 10px;
+    margin: 9px 0;
+    border: 0;
+    color: white;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px; }
+  #search .button {
+    display: block;
+    float: left;
+    background: #15253c;
+    width: 70px;
+    padding: 10px;
+    margin: 9px 20px;
+    border: 0;
+    color: white;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px; }
+  #search button, #search label {
+    color: #fff; }
+  #search .button:hover,
+  #search .button:active {
+    background: #c0392b;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -ms-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out; }
 
 .bubble h4 {
   text-align: center;
@@ -84,8 +77,28 @@ button, label {
   color: #c0392b;
   text-transform: uppercase;
   text-shadow: 1px 1px 1px #09163B; }
-
-.artists {
+.bubble .info {
+  padding: 15px 0; }
+  .bubble .info .loc {
+    background-image: url("../images/location.png");
+    background-repeat: no-repeat; }
+    .bubble .info .loc p {
+      font-size: 12px;
+      padding: 0 30px; }
+  .bubble .info .date {
+    background-image: url("../images/alarm.png");
+    background-repeat: no-repeat; }
+    .bubble .info .date p {
+      font-size: 12px;
+      padding: 0 30px; }
+  .bubble .info .lfm {
+    background-image: url("../images/lastfm.png");
+    background-repeat: no-repeat; }
+    .bubble .info .lfm a {
+      font-size: 12px;
+      padding: 0 30px;
+      color: #E4E1E1; }
+.bubble .artists {
   max-height: 200px;
   overflow: scroll;
   background: #203244;
@@ -95,42 +108,16 @@ button, label {
   font-size: 12px;
   margin: 5px 0; }
 
-.info {
-  padding: 15px 0; }
-
-.loc, .date p {
-  font-size: 12px;
-  padding: 0 30px; }
-
-.lfm a {
-  font-size: 12px;
-  padding: 0 30px;
-  color: #E4E1E1; }
-
-.loc {
-  background-image: url("../images/location.png");
-  background-repeat: no-repeat; }
-
-.date {
-  background-image: url("../images/alarm.png");
-  background-repeat: no-repeat; }
-
-.lfm {
-  background-image: url("../images/lastfm.png");
-  background-repeat: no-repeat; }
-
 #map-canvas {
   height: 100%;
   width: 100%; }
-
-#map-canvas img {
-  max-width: inherit; }
+  #map-canvas img {
+    max-width: inherit; }
 
 .navbar-default .navbar-brand {
   font-family: 'Lobster', cursive;
   color: white;
   font-size: 34px;
   margin-right: 20px; }
-
 .navbar-default .navbar-brand:hover {
   color: #d8d8d8; }
