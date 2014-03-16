@@ -100,21 +100,18 @@ body, html {
   .bubble .info span {
     float: left;
     margin-right: 8px;
-    font-size: 20px; }
+    font-size: 16px; }
   .bubble .info .loc .icon-location:before {
     content: "\e618"; }
   .bubble .info .loc p {
-    font-size: 12px;
     padding: 0 15px; }
   .bubble .info .date .icon-calendar:before {
     content: "\e645"; }
   .bubble .info .date p {
-    font-size: 12px;
     padding: 0 15px; }
   .bubble .info .lfm .icon-lastfm:before {
     content: "\e705"; }
   .bubble .info .lfm a {
-    font-size: 12px;
     color: #E4E1E1; }
 .bubble .artists {
   max-height: 200px;

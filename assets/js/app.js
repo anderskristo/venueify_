@@ -6,7 +6,7 @@ window.Venue = Venue
 
 Venue.Config = {
   lfmHost     : 'http://ws.audioscrobbler.com/2.0/?method=geo.getevents&limit=20&location=',
-  lfmKey      : '&api_key=2776b29967e1bfd49cfc90686cd48b6c',
+  lfmKey      : '&api_key=XXX',
   lfmCb       : '&format=json&callback=?'
 }
 
@@ -75,7 +75,8 @@ Venue.map = function (data) {
           borderColor: '#15253C',
           borderWidth: 5,
           borderRadius: 5,
-          minWidth: 300
+          minWidth: 300,
+          maxWidth: 300
         })
         infoBubble.open(map, this)
       } else {
@@ -92,7 +93,8 @@ Venue.map = function (data) {
           borderColor: '#15253C',
           borderWidth: 5,
           borderRadius: 5,
-          minWidth: 300
+          minWidth: 300,
+          maxWidth: 300
         })
         infoBubble.open(map, this)
       }
