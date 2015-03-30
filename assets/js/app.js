@@ -6,7 +6,7 @@ window.Venue = Venue
 
 Venue.Config = {
   lfmHost     : 'http://ws.audioscrobbler.com/2.0/?method=geo.getevents&limit=20&location=',
-  lfmKey      : '&api_key=XXX',
+  lfmKey      : '&api_key=6518e64bd342d4fee8ae6a478b71becb',
   lfmCb       : '&format=json&callback=?'
 }
 
